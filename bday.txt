@@ -1,0 +1,3 @@
+edward capriolo,edward@media6degrees.com,2-12-1981,209.191.139.200,M,10
+bob,bob@test.net,10-10-2004,10.10.10.1,M,50
+sara connor,sara@sky.net,4-5-1974,64.64.5.1,F,2

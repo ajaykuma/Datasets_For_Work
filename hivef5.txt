@@ -1,0 +1,8 @@
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany
+100,peter,iphone:samsung:sony,ber$germany,ber:street23:germany

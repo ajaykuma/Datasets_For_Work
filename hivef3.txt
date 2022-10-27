@@ -1,0 +1,8 @@
+100,peter,iphone:samsung:sony:motorla,ber$germany
+1100,apeter,sony:motorla,mun$germany
+1100,bpeter,iphone:samsung:sony,ffrt$germany
+1010,cpeter,iphone,ber$germany
+1010,dpeter,iphone:samsung:sony:motorla,ffrt$germany
+10011,epeter,iphone:samsung:sony:motorla:xiomi,mun$germany
+1002,pester,iphone:samsung:sony:motorla:ericcson,ber$germany
+1001,peters,iphone:samsung:sony:motorla,ber$germany

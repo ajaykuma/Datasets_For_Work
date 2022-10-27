@@ -1,0 +1,15 @@
+10^Azaj^A10^A1styear^C210000
+10^Aaaj^A10^A1styear^C410000
+10^Abaj^A10^A1styear^C5510000
+10^Acaj^A10^A1styear^C610000
+10^Adaj^A10^A1styear^C710000
+10^Aeaj^A10^A2ndyear^C10000
+10^Afaj^A10^A1styear^C310000
+10^Agaj^A10^A1styear^C1220000
+10^Ahaj^A10^A1styear^C110000
+10^Aiaj^A10^A3rdyear^C1230000
+10^Ajaj^A10^A1styear^C109000
+10^Akaj^A10^A1styear^C110000
+10^Alaj^A10^A1styear^C110000
+10^Amaj^A10^A1styear^C120000
+10^Anaj^A10^A1styear^C10000

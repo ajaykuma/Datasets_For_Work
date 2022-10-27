@@ -1,0 +1,11 @@
+{'MessageId': '73ecf72a-070d-4d07-aeb8-77457c33e88c',
+ 'ReceiptHandle': 'AQEBwjGxRc4/tRysLK365JyJ8P7jTvbDntd7enP6rBzN1B/9gzDyKarXHS56cH0jkN42HQSCINYnbSxPNooVeKtrh0kh7rsZ6O8phm2/+tA76oKbhXRrv3Tqvel4mS52lfla3VlEYwo5K7bKnvl5UQ33P/Jpcq6ANuX3Y0q8mkDXJ7idLLRIMAS+y0wnOc954SiZ3U0NDGTHur21+hJ0hpODswTO7GOzlb0AFi/ROwrqp/s/KgFnZ6VoBKPsGmTK56p2ZJmpw7iDbnaoUIZ1T4mdkwHLCedvcDNYepnoyGfzOqXYaANFlrJk8ROgJzk8G2HjB/RCDKqkxO2oIAXSAGEBN9u+jFF3b0jlUsQFsBS7m1kYrPHuQ4SQmISCnlqgg688LVAFvc+jnBMG1FSyXHAsNg==', 
+ 'MD5OfBody': 'e2f4cd04558f1794f432e4783459b018', 
+ 'Body': '{"version":"1.0","timestamp":"2021-01-10T14:43:10.282Z",
+ "requestContext":
+ {"requestId":"80b32e32-bc47-4477-8f83-238117c62077",
+ "functionArn":"arn:aws:lambda:eu-central-1:443602378074:function:testf5:$LATEST",
+ "condition":"Success","approximateInvokeCount":1},
+ "requestPayload":
+ {"Records":[{"eventVersion":"2.1","eventSource":"aws:s3","awsRegion":"eu-central-1","eventTime":"2021-01-10T14:43:07.098Z","eventName":"ObjectRemoved:Delete",
+ "userIdentity":{"principalId":"A2WDNDIMYIZZ3"},"requestParameters":{"sourceIPAddress":"95.91.192.250"},"responseElements":{"x-amz-request-id":"BC65211D4C3A3A19","x-amz-id-2":"64yURTYEmimZoxUJiTFvDTf0Zuirg4zrgUVAtGw5z3g53zlL/gwxHUoyHTnq7OGyyE0+7A0bcFiTf3gMFF3Z1JuB+QSYpQK/"},"s3":{"s3SchemaVersion":"1.0","configurationId":"1638cef9-b545-4a0b-ad8e-8fc2ca67d3f9","bucket":{"name":"tbuck1aj","ownerIdentity":{"principalId":"A2WDNDIMYIZZ3"},"arn":"arn:aws:s3:::tbuck1aj"},"object":{"key":"primer-dataset.json","sequencer":"005FFB127C553E535B"}}}]},"responseContext":{"statusCode":200,"executedVersion":"$LATEST"},"responsePayload":{"statusCode": 200, "body": "\\"Hello from Lambda!\\""}}'}$$>>

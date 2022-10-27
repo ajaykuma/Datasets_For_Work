@@ -1,0 +1,123 @@
+Spark Command: /usr/lib/jvm/jdk1.8.0_221/bin/java -cp /usr/local/spark/conf/:/usr/local/spark/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://um1:7077
+========================================
+2020-04-14 07:29:35 INFO  Worker:2612 - Started daemon with process name: 3406@um2
+2020-04-14 07:29:35 INFO  SignalUtils:54 - Registered signal handler for TERM
+2020-04-14 07:29:35 INFO  SignalUtils:54 - Registered signal handler for HUP
+2020-04-14 07:29:35 INFO  SignalUtils:54 - Registered signal handler for INT
+2020-04-14 07:29:36 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-04-14 07:29:37 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 07:29:37 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 07:29:37 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 07:29:37 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 07:29:37 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 07:29:37 INFO  Utils:54 - Successfully started service 'sparkWorker' on port 36115.
+2020-04-14 07:29:38 INFO  Worker:54 - Starting Spark worker 192.168.251.4:36115 with 2 cores, 6.6 GB RAM
+2020-04-14 07:29:38 INFO  Worker:54 - Running Spark version 2.3.3
+2020-04-14 07:29:38 INFO  Worker:54 - Spark home: /usr/local/spark
+2020-04-14 07:29:38 INFO  log:192 - Logging initialized @6062ms
+2020-04-14 07:29:38 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2020-04-14 07:29:38 INFO  Server:419 - Started @6402ms
+2020-04-14 07:29:39 INFO  AbstractConnector:278 - Started ServerConnector@5a82e0cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2020-04-14 07:29:39 INFO  Utils:54 - Successfully started service 'WorkerUI' on port 8081.
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6bb88723{/logPage,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@53130414{/logPage/json,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7874fe24{/,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@edfacd9{/json,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@45272ab2{/static,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@50b98998{/log,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  WorkerWebUI:54 - Bound WorkerWebUI to 0.0.0.0, and started at http://um2:8081
+2020-04-14 07:29:39 INFO  Worker:54 - Connecting to master um1:7077...
+2020-04-14 07:29:39 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@553f3aa1{/metrics/json,null,AVAILABLE,@Spark}
+2020-04-14 07:29:39 INFO  TransportClientFactory:267 - Successfully created connection to um1/192.168.251.3:7077 after 161 ms (0 ms spent in bootstraps)
+2020-04-14 07:29:41 INFO  Worker:54 - Successfully registered with master spark://um1:7077
+2020-04-14 07:30:26 INFO  Worker:54 - Asked to launch executor app-20200414073026-0000/1 for Spark shell
+2020-04-14 07:30:26 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 07:30:26 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 07:30:26 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 07:30:27 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 07:30:27 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 07:30:27 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=40421" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:40421" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414073026-0000" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 07:40:52 INFO  Worker:54 - Asked to kill executor app-20200414073026-0000/1
+2020-04-14 07:40:52 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414073026-0000/1 interrupted
+2020-04-14 07:40:52 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 07:40:52 INFO  Worker:54 - Executor app-20200414073026-0000/1 finished with state KILLED exitStatus 0
+2020-04-14 07:40:52 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414073026-0000 removed, cleanupLocalDirs = true
+2020-04-14 07:40:52 INFO  Worker:54 - Cleaning up local directories for application app-20200414073026-0000
+2020-04-14 07:41:12 INFO  Worker:54 - Asked to launch executor app-20200414074112-0001/1 for Spark shell
+2020-04-14 07:41:12 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 07:41:12 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 07:41:12 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 07:41:12 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 07:41:12 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 07:41:12 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=44025" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:44025" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414074112-0001" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 07:42:20 INFO  Worker:54 - Asked to kill executor app-20200414074112-0001/1
+2020-04-14 07:42:20 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414074112-0001/1 interrupted
+2020-04-14 07:42:20 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 07:42:20 INFO  Worker:54 - Executor app-20200414074112-0001/1 finished with state KILLED exitStatus 143
+2020-04-14 07:42:20 INFO  Worker:54 - Cleaning up local directories for application app-20200414074112-0001
+2020-04-14 07:42:20 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414074112-0001 removed, cleanupLocalDirs = true
+2020-04-14 07:42:49 INFO  Worker:54 - Asked to launch executor app-20200414074249-0002/1 for Spark shell
+2020-04-14 07:42:49 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 07:42:49 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 07:42:49 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 07:42:49 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 07:42:49 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 07:42:49 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=36327" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:36327" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414074249-0002" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 08:21:01 INFO  Worker:54 - Asked to kill executor app-20200414074249-0002/1
+2020-04-14 08:21:01 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414074249-0002/1 interrupted
+2020-04-14 08:21:01 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 08:21:01 INFO  Worker:54 - Executor app-20200414074249-0002/1 finished with state KILLED exitStatus 0
+2020-04-14 08:21:01 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414074249-0002 removed, cleanupLocalDirs = true
+2020-04-14 08:21:01 INFO  Worker:54 - Cleaning up local directories for application app-20200414074249-0002
+2020-04-14 08:21:12 INFO  Worker:54 - Asked to launch executor app-20200414082112-0003/1 for PySparkShell
+2020-04-14 08:21:12 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 08:21:12 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 08:21:12 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 08:21:12 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 08:21:12 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 08:21:12 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=38969" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:38969" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414082112-0003" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 08:29:06 INFO  Worker:54 - Asked to kill executor app-20200414082112-0003/1
+2020-04-14 08:29:06 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414082112-0003/1 interrupted
+2020-04-14 08:29:06 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 08:29:06 INFO  Worker:54 - Executor app-20200414082112-0003/1 finished with state KILLED exitStatus 143
+2020-04-14 08:29:06 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414082112-0003 removed, cleanupLocalDirs = true
+2020-04-14 08:29:06 INFO  Worker:54 - Cleaning up local directories for application app-20200414082112-0003
+2020-04-14 08:29:27 INFO  Worker:54 - Asked to launch executor app-20200414082927-0004/1 for Spark shell
+2020-04-14 08:29:27 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 08:29:27 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 08:29:27 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 08:29:27 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 08:29:27 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 08:29:27 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=38207" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:38207" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414082927-0004" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 09:32:17 INFO  Worker:54 - Asked to kill executor app-20200414082927-0004/1
+2020-04-14 09:32:17 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414082927-0004/1 interrupted
+2020-04-14 09:32:17 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 09:32:17 INFO  Worker:54 - Executor app-20200414082927-0004/1 finished with state KILLED exitStatus 143
+2020-04-14 09:32:17 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414082927-0004 removed, cleanupLocalDirs = true
+2020-04-14 09:32:17 INFO  Worker:54 - Cleaning up local directories for application app-20200414082927-0004
+2020-04-14 09:32:59 INFO  Worker:54 - Asked to launch executor app-20200414093259-0005/1 for Spark shell
+2020-04-14 09:32:59 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 09:32:59 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 09:32:59 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 09:32:59 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 09:32:59 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 09:32:59 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=43965" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:43965" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414093259-0005" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 09:54:00 INFO  Worker:54 - Asked to kill executor app-20200414093259-0005/1
+2020-04-14 09:54:00 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414093259-0005/1 interrupted
+2020-04-14 09:54:00 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 09:54:01 INFO  Worker:54 - Executor app-20200414093259-0005/1 finished with state KILLED exitStatus 143
+2020-04-14 09:54:01 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414093259-0005 removed, cleanupLocalDirs = true
+2020-04-14 09:54:01 INFO  Worker:54 - Cleaning up local directories for application app-20200414093259-0005
+2020-04-14 09:54:16 INFO  Worker:54 - Asked to launch executor app-20200414095416-0006/1 for Spark shell
+2020-04-14 09:54:16 INFO  SecurityManager:54 - Changing view acls to: hdu
+2020-04-14 09:54:16 INFO  SecurityManager:54 - Changing modify acls to: hdu
+2020-04-14 09:54:16 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-04-14 09:54:16 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-04-14 09:54:16 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hdu); groups with view permissions: Set(); users  with modify permissions: Set(hdu); groups with modify permissions: Set()
+2020-04-14 09:54:16 INFO  ExecutorRunner:54 - Launch command: "/usr/lib/jvm/jdk1.8.0_221/bin/java" "-cp" "/usr/local/spark/conf/:/usr/local/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=34211" "-XX:+PrintGCDetails" "-Dkey=value" "-Dnumbers=one two three" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@um1:34211" "--executor-id" "1" "--hostname" "192.168.251.4" "--cores" "2" "--app-id" "app-20200414095416-0006" "--worker-url" "spark://Worker@192.168.251.4:36115"
+2020-04-14 10:12:42 INFO  Worker:54 - Asked to kill executor app-20200414095416-0006/1
+2020-04-14 10:12:42 INFO  ExecutorRunner:54 - Runner thread for executor app-20200414095416-0006/1 interrupted
+2020-04-14 10:12:42 INFO  ExecutorRunner:54 - Killing process!
+2020-04-14 10:12:42 INFO  Worker:54 - Executor app-20200414095416-0006/1 finished with state KILLED exitStatus 0
+2020-04-14 10:12:42 INFO  ExternalShuffleBlockResolver:186 - Application app-20200414095416-0006 removed, cleanupLocalDirs = true
+2020-04-14 10:12:42 INFO  Worker:54 - Cleaning up local directories for application app-20200414095416-0006

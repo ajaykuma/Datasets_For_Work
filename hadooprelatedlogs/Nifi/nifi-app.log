@@ -1,0 +1,258 @@
+2019-08-14 17:29:38,592 INFO [main-EventThread] o.a.c.f.state.ConnectionStateManager State change: SUSPENDED
+2019-08-14 17:29:38,592 INFO [Curator-ConnectionStateManager-0] o.a.n.c.l.e.CuratorLeaderElectionManager org.apache.nifi.controller.leader.election.CuratorLeaderElectionManager$ElectionListener@5ac74234 Connection State changed to SUSPENDED
+2019-08-14 17:29:38,593 INFO [Curator-ConnectionStateManager-0] o.a.n.c.l.e.CuratorLeaderElectionManager org.apache.nifi.controller.leader.election.CuratorLeaderElectionManager$ElectionListener@1757d4c4 Connection State changed to SUSPENDED
+2019-08-14 17:29:38,740 ERROR [Timer-Driven Process Thread-3] o.a.nifi.groups.StandardProcessGroup Failed to synchronize StandardProcessGroup[identifier=907cfaa6-016c-1000-0000-00001c5c56a2] with Flow Registry because could not determine the most recent version of the Flow in the Flow Registry
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1570)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:390)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:282)
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:278)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:767)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:229)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:414)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:765)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:428)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:324)
+	at org.apache.nifi.registry.client.impl.JerseyFlowClient.lambda$get$1(JerseyFlowClient.java:92)
+	at org.apache.nifi.registry.client.impl.AbstractJerseyClient.executeAction(AbstractJerseyClient.java:71)
+	at org.apache.nifi.registry.client.impl.JerseyFlowClient.get(JerseyFlowClient.java:86)
+	at org.apache.nifi.registry.flow.RestBasedFlowRegistry.getVersionedFlow(RestBasedFlowRegistry.java:273)
+	at org.apache.nifi.groups.StandardProcessGroup.synchronizeWithFlowRegistry(StandardProcessGroup.java:3273)
+	at org.apache.nifi.controller.FlowController$5.run(FlowController.java:820)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-08-14 17:29:40,357 INFO [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] o.a.zookeeper.server.ZooKeeperServer Client attempting to renew session 0x26c8f975ed50001 at /192.168.56.102:38910
+2019-08-14 17:29:40,358 INFO [QuorumPeer[myid=2]/0.0.0.0:2181] o.a.zookeeper.server.ZooKeeperServer Established session 0x26c8f975ed50001 with negotiated timeout 4000 for client /192.168.56.102:38910
+2019-08-14 17:29:40,358 INFO [main-EventThread] o.a.c.f.state.ConnectionStateManager State change: RECONNECTED
+2019-08-14 17:29:40,358 INFO [Curator-ConnectionStateManager-0] o.a.n.c.l.e.CuratorLeaderElectionManager org.apache.nifi.controller.leader.election.CuratorLeaderElectionManager$ElectionListener@5ac74234 Connection State changed to RECONNECTED
+2019-08-14 17:29:40,358 INFO [Curator-ConnectionStateManager-0] o.a.n.c.l.e.CuratorLeaderElectionManager org.apache.nifi.controller.leader.election.CuratorLeaderElectionManager$ElectionListener@1757d4c4 Connection State changed to RECONNECTED
+2019-08-14 17:29:42,489 INFO [Leader Election Notification Thread-3] o.a.n.c.l.e.CuratorLeaderElectionManager org.apache.nifi.controller.leader.election.CuratorLeaderElectionManager$ElectionListener@1757d4c4 This node has been elected Leader for Role 'Primary Node'
+2019-08-14 17:29:42,489 INFO [Leader Election Notification Thread-4] o.a.n.c.l.e.CuratorLeaderElectionManager org.apache.nifi.controller.leader.election.CuratorLeaderElectionManager$ElectionListener@5ac74234 This node has been elected Leader for Role 'Cluster Coordinator'
+2019-08-14 17:29:42,489 INFO [Leader Election Notification Thread-3] o.apache.nifi.controller.FlowController This node has been elected Primary Node
+2019-08-14 17:29:42,489 INFO [Leader Election Notification Thread-4] o.apache.nifi.controller.FlowController This node elected Active Cluster Coordinator
+2019-08-14 17:29:42,916 INFO [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] o.a.zookeeper.server.ZooKeeperServer Client attempting to renew session 0x26c8f975ed50002 at /192.168.56.102:38912
+2019-08-14 17:29:42,917 INFO [QuorumPeer[myid=2]/0.0.0.0:2181] o.a.zookeeper.server.ZooKeeperServer Invalid session 0x26c8f975ed50002 for client /192.168.56.102:38912, probably expired
+2019-08-14 17:30:34,503 INFO [Process Cluster Protocol Request-7] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 821cc0e0-48df-4287-8e25-11ebbba02048 (type=HEARTBEAT, length=3273 bytes) from um3:8080 in 2 millis
+2019-08-14 17:30:34,809 WARN [Clustering Tasks Thread-2] o.apache.nifi.controller.FlowController Failed to send heartbeat due to: org.apache.nifi.cluster.protocol.ProtocolException: Failed to send message to Cluster Coordinator due to: java.net.NoRouteToHostException: No route to host (Host unreachable)
+2019-08-14 17:30:35,386 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 1 heartbeats in 118880 nanos
+2019-08-14 17:30:35,386 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator um2:8080 requested disconnection from cluster due to Have not received a heartbeat from node in 52 seconds
+2019-08-14 17:30:35,386 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Status of um2:8080 changed from NodeConnectionStatus[nodeId=um2:8080, state=CONNECTED, updateId=90] to NodeConnectionStatus[nodeId=um2:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=90]
+2019-08-14 17:30:38,458 WARN [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Event Reported for um2:8080 -- Node disconnected from cluster due to Have not received a heartbeat from node in 52 seconds
+2019-08-14 17:30:38,458 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator um1:8080 requested disconnection from cluster due to Have not received a heartbeat from node in 52 seconds
+2019-08-14 17:30:38,458 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Status of um1:8080 changed from NodeConnectionStatus[nodeId=um1:8080, state=CONNECTED, updateId=88] to NodeConnectionStatus[nodeId=um1:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=91]
+2019-08-14 17:30:38,742 ERROR [Timer-Driven Process Thread-4] o.a.nifi.groups.StandardProcessGroup Failed to synchronize StandardProcessGroup[identifier=907cfaa6-016c-1000-0000-00001c5c56a2] with Flow Registry because could not determine the most recent version of the Flow in the Flow Registry
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1570)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:390)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:282)
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:278)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:767)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:229)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:414)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:765)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:428)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:324)
+	at org.apache.nifi.registry.client.impl.JerseyFlowClient.lambda$get$1(JerseyFlowClient.java:92)
+	at org.apache.nifi.registry.client.impl.AbstractJerseyClient.executeAction(AbstractJerseyClient.java:71)
+	at org.apache.nifi.registry.client.impl.JerseyFlowClient.get(JerseyFlowClient.java:86)
+	at org.apache.nifi.registry.flow.RestBasedFlowRegistry.getVersionedFlow(RestBasedFlowRegistry.java:273)
+	at org.apache.nifi.groups.StandardProcessGroup.synchronizeWithFlowRegistry(StandardProcessGroup.java:3273)
+	at org.apache.nifi.controller.FlowController$5.run(FlowController.java:820)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-08-14 17:30:39,507 INFO [Process Cluster Protocol Request-8] o.a.n.c.p.impl.SocketProtocolListener Finished processing request beef9bbc-f9b0-475b-8b6c-fa001273497a (type=HEARTBEAT, length=3601 bytes) from um3:8080 in 1 millis
+2019-08-14 17:30:39,814 INFO [Process Cluster Protocol Request-9] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 6e40516a-cc03-4943-b1a8-8944be94b936 (type=HEARTBEAT, length=3601 bytes) from um2:8080 in 1 millis
+2019-08-14 17:30:39,815 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:30:39,810 and sent to um2:11000 at 2019-08-14 17:30:39,815; send took 4 millis
+2019-08-14 17:30:41,529 WARN [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Event Reported for um1:8080 -- Node disconnected from cluster due to Have not received a heartbeat from node in 52 seconds
+2019-08-14 17:30:44,513 INFO [Process Cluster Protocol Request-10] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 42a043ef-b063-4e7a-99a6-03f88d2c6c35 (type=HEARTBEAT, length=3601 bytes) from um3:8080 in 1 millis
+2019-08-14 17:30:44,820 INFO [Process Cluster Protocol Request-1] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 186331c3-3bf3-4658-a379-1e1a94aa5f90 (type=HEARTBEAT, length=3601 bytes) from um2:8080 in 1 millis
+2019-08-14 17:30:44,822 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:30:44,816 and sent to um2:11000 at 2019-08-14 17:30:44,822; send took 5 millis
+2019-08-14 17:30:46,532 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Event Reported for um2:8080 -- Received heartbeat from node previously disconnected due to Lack of Heartbeat. Issuing reconnection request.
+2019-08-14 17:30:46,532 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Event Reported for um2:8080 -- Requesting that node connect to cluster
+2019-08-14 17:30:46,533 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Status of um2:8080 changed from NodeConnectionStatus[nodeId=um2:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=90] to NodeConnectionStatus[nodeId=um2:8080, state=CONNECTING, updateId=92]
+2019-08-14 17:30:47,977 INFO [pool-13-thread-1] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2019-08-14 17:30:47,977 INFO [pool-13-thread-1] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 0 records in 0 milliseconds
+2019-08-14 17:30:49,518 INFO [Process Cluster Protocol Request-2] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 826e1f95-fca9-49cc-9278-49864f4ab48f (type=HEARTBEAT, length=3521 bytes) from um3:8080 in 2 millis
+2019-08-14 17:30:49,594 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 3 seconds, 61 millis
+2019-08-14 17:30:49,603 INFO [Process Cluster Protocol Request-3] o.a.n.c.p.impl.SocketProtocolListener Finished processing request aff86b58-1a39-4916-b26b-2f31481d6edc (type=RECONNECTION_REQUEST, length=75052 bytes) from um2:8080 in 2 millis
+2019-08-14 17:30:49,603 INFO [Reconnect to Cluster] o.a.nifi.controller.StandardFlowService Processing reconnection request from cluster coordinator.
+2019-08-14 17:30:49,604 INFO [Reconnect to Cluster] o.a.n.c.c.node.NodeClusterCoordinator Resetting cluster node statuses from {um3:8080=NodeConnectionStatus[nodeId=um3:8080, state=CONNECTED, updateId=89], um2:8080=NodeConnectionStatus[nodeId=um2:8080, state=CONNECTING, updateId=92], um1:8080=NodeConnectionStatus[nodeId=um1:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=91]} to {um3:8080=NodeConnectionStatus[nodeId=um3:8080, state=CONNECTED, updateId=89], um2:8080=NodeConnectionStatus[nodeId=um2:8080, state=CONNECTING, updateId=92], um1:8080=NodeConnectionStatus[nodeId=um1:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=91]}
+2019-08-14 17:30:49,606 INFO [Reconnect um2:8080] o.a.n.c.c.node.NodeClusterCoordinator Successfully requested that um2:8080 join the cluster
+2019-08-14 17:30:49,678 INFO [Reconnect to Cluster] o.a.nifi.groups.StandardProcessGroup Template[id=283a29e9-2ca1-3f81-ad2b-a4a5939ecfc2] removed from flow
+2019-08-14 17:30:49,678 INFO [Reconnect to Cluster] o.a.nifi.groups.StandardProcessGroup Template[id=283a29e9-2ca1-3f81-ad2b-a4a5939ecfc2] added to StandardProcessGroup[identifier=8859e72e-016c-1000-5fce-0ff08446082b]
+2019-08-14 17:30:49,695 INFO [Reconnect to Cluster] o.apache.nifi.controller.FlowController Successfully synchronized controller with proposed flow
+2019-08-14 17:30:49,708 INFO [Reconnect to Cluster] o.a.nifi.controller.StandardFlowService Setting Flow Controller's Node ID: um2:8080
+2019-08-14 17:30:49,708 INFO [Reconnect to Cluster] o.a.n.c.c.node.NodeClusterCoordinator This node is now connected to the cluster. Will no longer require election of DataFlow.
+2019-08-14 17:30:49,709 INFO [Reconnect to Cluster] o.apache.nifi.controller.FlowController Performed initial validation of all components in 0 milliseconds
+2019-08-14 17:30:49,709 INFO [Reconnect to Cluster] o.apache.nifi.controller.FlowController Starting 0 processors/ports/funnels
+2019-08-14 17:30:49,709 INFO [Reconnect to Cluster] o.apache.nifi.controller.FlowController Started 0 Remote Group Ports transmitting
+2019-08-14 17:30:49,709 INFO [Reconnect to Cluster] o.a.n.c.c.node.NodeClusterCoordinator Resetting cluster node statuses from {um3:8080=NodeConnectionStatus[nodeId=um3:8080, state=CONNECTED, updateId=89], um2:8080=NodeConnectionStatus[nodeId=um2:8080, state=CONNECTING, updateId=92], um1:8080=NodeConnectionStatus[nodeId=um1:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=91]} to {um3:8080=NodeConnectionStatus[nodeId=um3:8080, state=CONNECTED, updateId=89], um2:8080=NodeConnectionStatus[nodeId=um2:8080, state=CONNECTING, updateId=92], um1:8080=NodeConnectionStatus[nodeId=um1:8080, state=DISCONNECTED, Disconnect Code=Lack of Heartbeat, Disconnect Reason=Have not received a heartbeat from node in 52 seconds, updateId=91]}
+2019-08-14 17:30:49,723 INFO [Reconnect to Cluster] o.a.nifi.controller.StandardFlowService Node reconnected.
+2019-08-14 17:30:54,526 INFO [Process Cluster Protocol Request-4] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 046ee08c-5e1e-42a4-81ad-890e1ff368de (type=HEARTBEAT, length=3521 bytes) from um3:8080 in 4 millis
+2019-08-14 17:30:54,595 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Event Reported for um2:8080 -- Received heartbeat but ignoring because it was reported before the node was last asked to reconnect.
+2019-08-14 17:30:54,595 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 1 heartbeats in 140887 nanos
+2019-08-14 17:30:54,714 INFO [Process Cluster Protocol Request-5] o.a.n.c.p.impl.SocketProtocolListener Finished processing request bae2df76-da90-4256-9850-5135788da5f7 (type=HEARTBEAT, length=3521 bytes) from um2:8080 in 915427 nanos
+2019-08-14 17:30:54,715 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:30:54,712 and sent to um2:11000 at 2019-08-14 17:30:54,715; send took 2 millis
+2019-08-14 17:30:59,533 INFO [Process Cluster Protocol Request-6] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 4b82e100-306b-4fd2-b50a-9336d4723f29 (type=HEARTBEAT, length=3521 bytes) from um3:8080 in 1 millis
+2019-08-14 17:30:59,597 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator um2:8080 is now connected
+2019-08-14 17:30:59,597 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Status of um2:8080 changed from NodeConnectionStatus[nodeId=um2:8080, state=CONNECTING, updateId=92] to NodeConnectionStatus[nodeId=um2:8080, state=CONNECTED, updateId=94]
+2019-08-14 17:30:59,719 INFO [Process Cluster Protocol Request-7] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 383f73d5-8a1b-4362-a65a-0bfc93dfa799 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 1 millis
+2019-08-14 17:30:59,720 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:30:59,717 and sent to um2:11000 at 2019-08-14 17:30:59,720; send took 3 millis
+2019-08-14 17:31:02,680 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.node.NodeClusterCoordinator Event Reported for um2:8080 -- Received first heartbeat from connecting node. Node connected.
+2019-08-14 17:31:02,681 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 3 seconds, 83 millis
+2019-08-14 17:31:04,540 INFO [Process Cluster Protocol Request-8] o.a.n.c.p.impl.SocketProtocolListener Finished processing request ae99929a-8c5b-4a5f-9de3-d9af1bfdd748 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:04,722 INFO [Process Cluster Protocol Request-9] o.a.n.c.p.impl.SocketProtocolListener Finished processing request eee529b7-949f-4ec1-a268-f55c7df3c3bd (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 1 millis
+2019-08-14 17:31:04,723 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:04,721 and sent to um2:11000 at 2019-08-14 17:31:04,723; send took 2 millis
+2019-08-14 17:31:07,683 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 34566 nanos
+2019-08-14 17:31:09,549 INFO [Process Cluster Protocol Request-10] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 2823bec2-2e3d-4ec9-b9c1-e90b654dfc3f (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 3 millis
+2019-08-14 17:31:09,728 INFO [Process Cluster Protocol Request-1] o.a.n.c.p.impl.SocketProtocolListener Finished processing request a8eec030-9b6a-4f8c-afc7-7466878e62d9 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:09,733 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:09,724 and sent to um2:11000 at 2019-08-14 17:31:09,733; send took 8 millis
+2019-08-14 17:31:12,685 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 13925 nanos
+2019-08-14 17:31:14,564 INFO [Process Cluster Protocol Request-2] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 8267d624-dc2a-4dfd-a53a-e52afacb8a2a (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:14,741 INFO [Process Cluster Protocol Request-3] o.a.n.c.p.impl.SocketProtocolListener Finished processing request df2b72aa-2ac7-4c3f-a15e-2a3fdda4bdaf (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 4 millis
+2019-08-14 17:31:14,744 INFO [Clustering Tasks Thread-1] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:14,736 and sent to um2:11000 at 2019-08-14 17:31:14,744; send took 8 millis
+2019-08-14 17:31:17,688 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 20866 nanos
+2019-08-14 17:31:19,573 INFO [Process Cluster Protocol Request-4] o.a.n.c.p.impl.SocketProtocolListener Finished processing request e6540353-919f-483f-96e2-c626910b75b7 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:19,749 INFO [Process Cluster Protocol Request-5] o.a.n.c.p.impl.SocketProtocolListener Finished processing request b37e7b50-432c-4804-8012-521c3279c848 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:19,752 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:19,745 and sent to um2:11000 at 2019-08-14 17:31:19,752; send took 6 millis
+2019-08-14 17:31:22,692 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 16212 nanos
+2019-08-14 17:31:24,580 INFO [Process Cluster Protocol Request-6] o.a.n.c.p.impl.SocketProtocolListener Finished processing request c30a6086-9839-47b5-a290-c0d2142cbe20 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:24,765 INFO [Process Cluster Protocol Request-7] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 70402401-8df8-4533-8276-a5f66590c78e (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 9 millis
+2019-08-14 17:31:24,767 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:24,752 and sent to um2:11000 at 2019-08-14 17:31:24,767; send took 14 millis
+2019-08-14 17:31:27,695 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 19788 nanos
+2019-08-14 17:31:29,586 INFO [Process Cluster Protocol Request-8] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 881195bd-aed2-46fc-9bb8-b77633345cde (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:29,773 INFO [Process Cluster Protocol Request-9] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 0f6e3c8c-3f7c-4b4e-a22d-698d9ede938e (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:29,776 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:29,769 and sent to um2:11000 at 2019-08-14 17:31:29,776; send took 7 millis
+2019-08-14 17:31:32,706 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 39500 nanos
+2019-08-14 17:31:34,603 INFO [Process Cluster Protocol Request-10] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 9a478450-3578-4952-8627-748887593531 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 9 millis
+2019-08-14 17:31:34,781 INFO [Process Cluster Protocol Request-1] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 35e95f8c-566b-4ed3-8a2d-e19596fe6b71 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:34,783 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:34,777 and sent to um2:11000 at 2019-08-14 17:31:34,783; send took 6 millis
+2019-08-14 17:31:35,075 INFO [Write-Ahead Local State Provider Maintenance] org.wali.MinimalLockingWriteAheadLog org.wali.MinimalLockingWriteAheadLog@59ac94ad checkpointed with 31 Records and 0 Swap Files in 14 milliseconds (Stop-the-world time = 4 milliseconds, Clear Edit Logs time = 4 millis), max Transaction ID 82
+2019-08-14 17:31:37,708 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 14577 nanos
+2019-08-14 17:31:38,743 ERROR [Timer-Driven Process Thread-8] o.a.nifi.groups.StandardProcessGroup Failed to synchronize StandardProcessGroup[identifier=907cfaa6-016c-1000-0000-00001c5c56a2] with Flow Registry because could not determine the most recent version of the Flow in the Flow Registry
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1570)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:390)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:282)
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:278)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:767)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:229)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:414)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:765)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:428)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:324)
+	at org.apache.nifi.registry.client.impl.JerseyFlowClient.lambda$get$1(JerseyFlowClient.java:92)
+	at org.apache.nifi.registry.client.impl.AbstractJerseyClient.executeAction(AbstractJerseyClient.java:71)
+	at org.apache.nifi.registry.client.impl.JerseyFlowClient.get(JerseyFlowClient.java:86)
+	at org.apache.nifi.registry.flow.RestBasedFlowRegistry.getVersionedFlow(RestBasedFlowRegistry.java:273)
+	at org.apache.nifi.groups.StandardProcessGroup.synchronizeWithFlowRegistry(StandardProcessGroup.java:3273)
+	at org.apache.nifi.controller.FlowController$5.run(FlowController.java:820)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-08-14 17:31:39,612 INFO [Process Cluster Protocol Request-2] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 37e6d5fb-66c2-4498-be16-dbb78b4d2207 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:39,794 INFO [Process Cluster Protocol Request-3] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 441b72c2-8b89-487c-82c1-da6783ce3978 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 4 millis
+2019-08-14 17:31:39,796 INFO [Clustering Tasks Thread-1] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:39,788 and sent to um2:11000 at 2019-08-14 17:31:39,796; send took 8 millis
+2019-08-14 17:31:42,711 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 14150 nanos
+2019-08-14 17:31:44,621 INFO [Process Cluster Protocol Request-4] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 3e4c3077-91f8-4a87-93c4-267e3acd365a (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 3 millis
+2019-08-14 17:31:44,804 INFO [Process Cluster Protocol Request-5] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 518572e1-ce1a-4c43-bac0-8a15c2739316 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 4 millis
+2019-08-14 17:31:44,809 INFO [Clustering Tasks Thread-3] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:44,797 and sent to um2:11000 at 2019-08-14 17:31:44,809; send took 11 millis
+2019-08-14 17:31:47,712 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 17227 nanos
+2019-08-14 17:31:49,628 INFO [Process Cluster Protocol Request-6] o.a.n.c.p.impl.SocketProtocolListener Finished processing request f762e9d9-b254-4f5b-8639-89b88867b571 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 1 millis
+2019-08-14 17:31:49,816 INFO [Process Cluster Protocol Request-7] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 5353be40-280b-4c5b-9057-59bbef466257 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:49,818 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:49,811 and sent to um2:11000 at 2019-08-14 17:31:49,818; send took 7 millis
+2019-08-14 17:31:52,716 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 35247 nanos
+2019-08-14 17:31:54,634 INFO [Process Cluster Protocol Request-8] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 37f201fb-1dd4-4bc3-a22e-ca835f363127 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 3 millis
+2019-08-14 17:31:54,823 INFO [Process Cluster Protocol Request-9] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 47492812-e577-47d2-ae0e-7a1910315a60 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:54,827 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:54,819 and sent to um2:11000 at 2019-08-14 17:31:54,827; send took 7 millis
+2019-08-14 17:31:57,720 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 41165 nanos
+2019-08-14 17:31:59,641 INFO [Process Cluster Protocol Request-10] o.a.n.c.p.impl.SocketProtocolListener Finished processing request b6f08bb5-1637-42c1-b8de-345e7be17e08 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:31:59,834 INFO [Process Cluster Protocol Request-1] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 12e9d790-7cc1-4fdb-9b3a-830b136ab95f (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:31:59,837 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:31:59,829 and sent to um2:11000 at 2019-08-14 17:31:59,837; send took 7 millis
+2019-08-14 17:32:02,725 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 20326 nanos
+2019-08-14 17:32:04,650 INFO [Process Cluster Protocol Request-2] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 7eed3b56-b751-4a5b-a1ed-29ad8f53527b (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 2 millis
+2019-08-14 17:32:04,842 INFO [Process Cluster Protocol Request-3] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 85f2aa37-75e2-46b0-8700-97c6541fa4fa (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 1 millis
+2019-08-14 17:32:04,845 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:32:04,838 and sent to um2:11000 at 2019-08-14 17:32:04,845; send took 6 millis
+2019-08-14 17:32:07,729 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 27063 nanos
+2019-08-14 17:32:09,661 INFO [Process Cluster Protocol Request-4] o.a.n.c.p.impl.SocketProtocolListener Finished processing request bdda0a7d-0375-4055-9bfe-64c58b048900 (type=HEARTBEAT, length=3437 bytes) from um3:8080 in 3 millis
+2019-08-14 17:32:09,850 INFO [Process Cluster Protocol Request-5] o.a.n.c.p.impl.SocketProtocolListener Finished processing request 80a226a4-6f98-41d9-b993-62aa0cb1f611 (type=HEARTBEAT, length=3437 bytes) from um2:8080 in 2 millis
+2019-08-14 17:32:09,856 INFO [Clustering Tasks Thread-2] o.a.n.c.c.ClusterProtocolHeartbeater Heartbeat created at 2019-08-14 17:32:09,846 and sent to um2:11000 at 2019-08-14 17:32:09,856; send took 10 millis
+2019-08-14 17:32:12,732 INFO [Heartbeat Monitor Thread-1] o.a.n.c.c.h.AbstractHeartbeatMonitor Finished processing 2 heartbeats in 21040 nanos
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

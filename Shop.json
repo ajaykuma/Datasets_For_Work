@@ -1,0 +1,210 @@
+[{
+        "ShopId" : 431,
+        "products" : [ 
+            {
+                "productId" : "1234",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "5234",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "6234",
+                "productName" : "apple",
+                "productCategory" : "juice",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "7234",
+                "productName" : "non veg",
+                "productCategory" : "north",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "8234",
+                "productName" : "non veg",
+                "productCategory" : "south",
+                "mrp" : "38"
+            } 
+           ]
+    },
+{
+        "ShopId" : 432,
+        "products" : [ 
+            {
+                "productId" : "7234",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "6234",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "9934",
+                "productName" : "orange",
+                "productCategory" : "juice",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "7231",
+                "productName" : "non veg",
+                "productCategory" : "kebab",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "8235",
+                "productName" : "non veg",
+                "productCategory" : "steaks",
+                "mrp" : "38"
+            } 
+           ]
+    },
+{
+        "ShopId" : 433,
+        "products" : [ 
+            {
+                "productId" : "1214",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "5214",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "6224",
+                "productName" : "apple",
+                "productCategory" : "juice",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "7214",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "8214",
+                "productName" : "non veg",
+                "productCategory" : "chinese",
+                "mrp" : "38"
+            } 
+           ]
+    },
+{
+        "ShopId" : 434,
+        "products" : [ 
+            {
+                "productId" : "1334",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "5334",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "6434",
+                "productName" : "apple",
+                "productCategory" : "juice",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "7834",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "8834",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            } 
+           ]
+    },
+{
+        "ShopId" : 435,
+        "products" : [ 
+            {
+                "productId" : "7734",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "5274",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "6274",
+                "productName" : "pineapple",
+                "productCategory" : "juice",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "7274",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "8231",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            } 
+           ]
+    },
+{
+        "ShopId" : 436,
+        "products" : [ 
+            {
+                "productId" : "1231",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "5232",
+                "productName" : "non veg",
+                "productCategory" : "meals",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "6233",
+                "productName" : "apple",
+                "productCategory" : "juice",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "7235",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            }, 
+             {
+                "productId" : "8236",
+                "productName" : "non veg",
+                "productCategory" : "biriyani",
+                "mrp" : "38"
+            } 
+           ]
+    }]
