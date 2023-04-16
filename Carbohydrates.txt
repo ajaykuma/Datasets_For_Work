@@ -1,0 +1,6 @@
+Food Glucose Fructose Maltose Saccharose
+Apples 2.10 0.50 0.00 1.30
+Bananas 4.40 2.70 0.00 6.40
+Corn 0.60 0.20 0.30 2.30
+Cucumber 0.70 0.70 0.00 0.00
+Lettuce 1.30 0.90 0.00 0.00
