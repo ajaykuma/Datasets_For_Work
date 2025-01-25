@@ -1,3 +1,4 @@
+eventid|venueid|catid|dateid|eventname|starttime
 1|305|8|1851|Gotterdammerung|2008-01-25 14:30:00
 2|306|8|2114|Boris Godunov|2008-10-15 20:00:00
 3|302|8|1935|Salome|2008-04-19 14:30:00
